@@ -1,0 +1,131 @@
+//////////////////////////////////////////////////
+// testing box model
+* {
+  // outline: dotted thin black;
+}
+
+// hidden parts
+.dev.devNone {
+  display: none;
+}
+////////////////////////////////////////////////////
+
+// basic bootstrap
+@import "./bootscss/bootstrap.scss";
+
+// General startig css
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+//////////////////////////////////////////////////
+
+//Extend css from bootstrap
+.navbar {
+  @extend .container;
+}
+
+// main styles containers
+////////////////////////
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
+
+body {
+  background: #f9f9f9;
+  color: #303030;
+  font-family: sans-serif;
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  min-height: 100px;
+}
+
+form {
+  padding: 2rem;
+  text-align: left;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+//elements styles
+/////////////////
+
+label,
+input {
+  display: block;
+}
+input {
+  @extend .form-control;
+  margin-bottom: 0.5rem;
+}
+label {
+  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+button {
+  @extend .btn, .btn-primary;
+  background: rgb(204, 204, 204);
+  color: black;
+  border: 1px solid rgb(160, 160, 160);
+  padding: 0.2rem 1rem;
+  line-height: normal;
+}
+
+.textbtn {
+  text-decoration: underline;
+  cursor: pointer;
+  &:hover {
+    color: crimson;
+    transition: 0.5s;
+  }
+}
+a {
+  color: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+    color: inherit;
+  }
+}
+
+ul {
+  margin-left: 1rem;
+}
+
+.blackb {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 5vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+// .frameBox{width: 100%; padding-top: 100%; }
+iframe {
+  min-width: 100%;
+  height: auto;
+}
+
+// slide styles
+// .slider-window {
+//   overflow: hidden;
+//   position: relative;
+// }
+
+// .slider-slider {
+//   display: flex;
+//   flow-flow: row nowrap;
+// }
+// ////////////////
