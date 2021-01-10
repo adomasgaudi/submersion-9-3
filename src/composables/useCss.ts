@@ -95,7 +95,7 @@ const slide = (direction: n, cards: n, sliderClass: string, itemClass: string ) 
 
 
 
-
+// comments
 const useCss = () =>{
   return {slide, count,cqueA, cque, cLenEqual }
 }
