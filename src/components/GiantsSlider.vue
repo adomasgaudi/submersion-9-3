@@ -106,7 +106,7 @@ export default {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  margin: 0 -16px;
+  // margin: 0 -16px;
 
   //
 
@@ -190,8 +190,8 @@ export default {
 
     .square {
       z-index: 2;
-      width: 200px;
-      height: 200px;
+      width: 250px;
+      height: 250px;
       background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
       box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.2);
       border-radius: 20px;

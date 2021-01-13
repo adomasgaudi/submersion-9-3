@@ -1,8 +1,8 @@
 <template lang="pug">
-#template 
+#OneArticle 
   section
     .container
-      h2 template
+      h2 OneArticle
 </template>
 
 <script lang="ts">
@@ -39,7 +39,7 @@ export default {
 </script>
 
 <style lang="scss">
-// #template {
+// #OneArticle {
 //section{}
 // }
 </style>

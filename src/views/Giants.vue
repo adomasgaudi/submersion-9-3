@@ -1,14 +1,16 @@
 <template lang="pug">
-h1 giants
+h1 The Giants
+Rookies
 </template>
 
 <script lang="ts">
+import Rookies from "@/views/giants/Rookies.vue";
 // import {fire, fireAuth} from '@/firebase/config'
 // import { useStore } from "vuex";
 // import { onMounted, ref, provide } from "vue";
 
 export default {
-  // components: [],
+  components: { Rookies },
   setup() {
     // const ss = useStore().state;
     // const sg = useStore().getters;

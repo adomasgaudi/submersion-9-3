@@ -15,19 +15,21 @@
       h4 The new way to learn is through immersion, not study.
       p Usually the education system is 
       h4 here's what they're missing and what they are not missing
-      button System
+      button(@click="router.push({name: 'Outdated'})" ) System
       
       h2 How do I know? 
       i.fas.fa-arrow-down
       
   section.giants
     .container
-      h4 I organise information such that similar stuff is not overhyped and no bottlenecks are overlooked. 
+      h4 I organise information such that similar stuff is not overhyped and bottlenecks are not overlooked. 
       h4 And I follow the BEST!
       h4 Resting on the shoulders of Giants:
       GiantsSlider
-        h3 Honestly, they're great
-        h3 buuut...
+  section
+    .container
+      h3 Honestly, they're great
+      h3 buuut...
         
   section.giants
     .container
@@ -52,14 +54,16 @@
 import GiantsSlider from "@/components/GiantsSlider.vue";
 import FullPicture from "@/components/FullPicture.vue";
 import ArticlesLine from "@/components/ArticlesLine.vue";
+import { useRouter, useRoute } from "vue-router";
+import { useStore } from "vuex";
 // import {fire, fireAuth} from '@/firebase/config'
-// import { useStore } from "vuex";
 // import { onMounted, ref, provide } from "vue";
 
 export default {
   components: { GiantsSlider, FullPicture, ArticlesLine },
   setup() {
-    // const ss = useStore().state;
+    const ss = useStore().state;
+    const router = useRouter();
     // const sg = useStore().getters;
     ///////////////////////
 
@@ -68,7 +72,8 @@ export default {
     // onMounted(() => {});
     ////////////////////////
     return {
-      // ss, sg
+      ss,
+      router
     };
   }
 };
@@ -77,6 +82,9 @@ export default {
 <style lang="scss">
 #welcome section {
   min-height: calc(100vh - 48px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .mid {
     margin-top: 4rem;
     margin-bottom: 8rem;

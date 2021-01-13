@@ -14,9 +14,9 @@ const cque = (cssclass: string)=> {
   }
 }
 
-const cLenEqual = (items: a, str: string, len: string, callback: a = console.log('callback empty')) =>{
+const cLenEqual = (items: a, str: string, len: string, callback: a = console.log()) =>{
 
-  console.log(items)
+  // console.log(items)
   // if(Array.isArray(items) || NodeList.prototype.isPrototypeOf(items)){
 
     if(len === 'width'){
@@ -28,10 +28,10 @@ const cLenEqual = (items: a, str: string, len: string, callback: a = console.log
         callback(item)
       });
     } else{
-      console.log('bad length')
+      // console.log('bad length')
     }
   }
-  console.log('not array')
+  // console.log('not array')
 
 // }
 
@@ -78,8 +78,49 @@ const slide = (direction: n, cards: n, sliderClass: string, itemClass: string ) 
 
 
 
+const cexNone = (btnClass: string, onClass: string, onClassStyle: string) => {
+  addEventListener("click", e => {
+    if (
+      (e.target as HTMLElement).classList.value.includes(btnClass) &&
+      ((e.target as HTMLElement).parentElement
+        ?.nextElementSibling as HTMLElement)
+    ) {
+      const sibling = (e.target as HTMLElement).parentElement
+        ?.nextElementSibling as HTMLElement;
+      //action
+      // turn off
+      if(sibling.classList.value.includes(onClassStyle)){
+        // sibling.classList.remove(onClass)
+        sibling.classList.remove(onClassStyle); 
+      }else{ //turn on
+        // sibling.classList.add(onClass)
+        sibling.classList.add(onClassStyle); 
+      }
+      // sibling.classList.toggle(onClass);
+      // setTimeout(()=>{
+      // },100)
+    }
+  });
+}
 
 
+
+
+
+// up devNone on all dev
+const devToggle = () => {
+  const devs = cqueA(".dev");
+  devs.forEach(item => {
+    item.classList.toggle("devNone");
+  });
+};
+
+const devAdd = () => {
+  const devs = cqueA(".dev");
+  devs.forEach(item => {
+    item.classList.add("devNone");
+  });
+};
 
 
 
@@ -97,7 +138,7 @@ const slide = (direction: n, cards: n, sliderClass: string, itemClass: string ) 
 
 // comments
 const useCss = () =>{
-  return {slide, count,cqueA, cque, cLenEqual }
+  return {slide, count,cqueA, cque, devToggle, devAdd, cLenEqual,cexNone }
 }
 
 export default useCss

@@ -1,22 +1,22 @@
 <template lang="pug">
 #ArticlesLine 
   .artc-window
-    .right-block(
+    i.fas.fa-chevron-right(
       @click='slide(1, 3, ".artc-slider", ".artc-item-outside")')
-    .left-block(
+    i.fas.fa-chevron-left(
       @click='slide(-1, 3, ".artc-slider", ".artc-item-outside" )')
     .artc-slider
       .artc-item-outside
-        .artc-item
-          h3 title
+        router-link.artc-item(:to="{name: 'Complex'}")
+          h3 Learning Complex
           p some text would go nicely
       .artc-item-outside
         .artc-item
-          h3 title
+          h3 learning how to learn
           p some text would go nicely
       .artc-item-outside
         .artc-item
-          h3 title
+          h3 philosophy
           p some text would go nicely
 </template>
 
@@ -43,7 +43,7 @@ export default {
     let cards = ref();
     onMounted(() => {
       cards = ref(cqueA(".artc-item-outside"));
-      console.log(cards.value.length);
+      // console.log(cards.value.length);
       // return { cards };
     });
     ////////////////////////
@@ -58,21 +58,25 @@ export default {
 <style lang="scss">
 #ArticlesLine {
   .artc-window {
+    // display: flex;
+    // justify-content: center;
     width: 100%;
-    border: 1px solid #000;
+    // border: 1px solid #000;
     overflow: hidden;
     position: relative;
   }
-  .right-block,
-  .left-block {
+  .fa-chevron-right,
+  .fa-chevron-left {
     position: absolute;
-    height: 100%;
-    width: 40px;
-    background: rgba(0, 255, 255, 0.8);
+    font-size: 30px;
+    top: calc(50% - 15px);
     z-index: 2;
   }
-  .right-block {
+  .fa-chevron-right {
     right: 0;
+  }
+  .fa-chevron-left {
+    left: 0;
   }
   .artc-slider {
     width: 300%;
@@ -81,21 +85,28 @@ export default {
   }
   .artc-item-outside {
     width: calc(100% / 3);
-    padding: 0.1rem 4%;
+    padding: 0.5rem 4%;
+    display: flex;
+    align-items: center;
   }
   .artc-item {
     width: 100%;
-
+    display: block;
+    // flex-flow: column nowrap;
     background: white;
     border: 1px solid #000;
     border-radius: 10px;
 
     padding: 0.3rem 1rem;
     text-align: left;
-    p,
+    p {
+      margin-bottom: 0;
+    }
     h3,
     h4 {
       margin-bottom: 0.1rem;
+      font-weight: 900;
+      font-size: 1.3em;
     }
   }
 }

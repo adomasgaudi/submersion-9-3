@@ -4,7 +4,7 @@ footer.real
     p cool 
 footer.menu
   .container
-    router-link.wid(:to='{name: "Home"}')
+    router-link.wid(:to='{name: "Map"}')
       i.fas.fa-sitemap 
     //- span |
     router-link.wid(:to='{name: "Giants"}')
@@ -16,7 +16,7 @@ footer.menu
     router-link.wid(:to='{name: "Outdated"}')
       i.fas.fa-chalkboard-teacher 
     //- span |
-    router-link.wid(:to='{name: "Home"}')
+    router-link.wid(:to='{name: "Articles"}')
       i.fas.fa-newspaper 
 
 </template>
@@ -49,7 +49,9 @@ footer.real {
   margin-top: 100px;
   margin-bottom: 48px;
 }
+
 footer.menu {
+  z-index: 10;
   box-shadow: 0 -2.5px 3.1px rgba(0, 0, 0, 0.07),
     0 -5.3px 7.4px rgba(0, 0, 0, 0.05), 0 -8.8px 14px rgba(0, 0, 0, 0.042),
     0 -12.9px 25px rgba(0, 0, 0, 0.035), 0 -17.5px 46.8px rgba(0, 0, 0, 0.028),
@@ -57,7 +59,7 @@ footer.menu {
 
   padding: 0.1rem 1rem;
   position: fixed;
-  bottom: 0;
+  bottom: 0px;
   left: 0;
   width: 100%;
   background: #00c090;
@@ -86,6 +88,34 @@ footer.menu {
   }
   .router-link-exact-active {
     color: crimson;
+  }
+}
+
+@media screen and (min-width: 765px) {
+  footer.menu {
+    z-index: 10;
+    box-shadow: 0 -2.5px 3.1px rgba(0, 0, 0, 0.07),
+      0 -5.3px 7.4px rgba(0, 0, 0, 0.05), 0 -8.8px 14px rgba(0, 0, 0, 0.042),
+      0 -12.9px 25px rgba(0, 0, 0, 0.035), 0 -17.5px 46.8px rgba(0, 0, 0, 0.028),
+      0 -22px 112px rgba(0, 0, 0, 0.02);
+
+    padding: 1rem 0.2rem;
+    position: fixed;
+    left: 0;
+    top: 49px;
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    background: #00c090;
+
+    //in
+    .container {
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
   }
 }
 </style>

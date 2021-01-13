@@ -1,5 +1,12 @@
 <template lang="pug">
-h1 rookies
+#Rookies
+  section
+    .container
+      p this section specifically goes to a few particular new commers to the language community. Which is mainly matt vs japan channel that essentially stemed from the All Japanese all the time (AJATT) community
+      h3 Matt vs Japan / Refold 
+      h3 Yoga / Migaku
+      h3 MIA / AJATT
+      h3 Brit vs Japan
 </template>
 
 <script lang="ts">
@@ -29,6 +36,11 @@ export default {
 </script>
 
 <style lang="scss">
-// #template {
-// }
+#Rookies {
+  section {
+    p {
+      text-align: left;
+    }
+  }
+}
 </style>
