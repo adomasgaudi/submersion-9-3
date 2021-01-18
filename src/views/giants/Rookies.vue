@@ -1,6 +1,6 @@
 <template lang="pug">
 #Rookies
-  section
+  section.dev
     .container
       p this section specifically goes to a few particular new commers to the language community. Which is mainly matt vs japan channel that essentially stemed from the All Japanese all the time (AJATT) community
       h3 Matt vs Japan / Refold 

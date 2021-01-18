@@ -2,7 +2,8 @@
 .wrapper
   Nav
   .mainview
-    footer.side
+    //- make space for floating footer
+    footer.side 
     .router
       router-view
 Footer
@@ -66,9 +67,12 @@ export default {
     flex-flow: row nowrap;
   }
   footer.side {
-    min-width: 62x;
+    min-width: 62px;
     height: 100vh;
-    background: purple;
+    background: #00c090;
+  }
+  .router {
+    margin: 0 auto;
   }
   // router-view {
   //   display: flex;

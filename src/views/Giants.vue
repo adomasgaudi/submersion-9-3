@@ -1,5 +1,6 @@
 <template lang="pug">
 h1 The Giants
+h2 Coming soon
 Rookies
 </template>
 

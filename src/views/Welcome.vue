@@ -12,19 +12,23 @@
       i.fas.fa-arrow-down
   section.system
     .container
-      h4 The new way to learn is through immersion, not study.
-      p Usually the education system is 
-      h4 here's what they're missing and what they are not missing
-      button(@click="router.push({name: 'Outdated'})" ) System
+      h2 The new way to learn is through immersion, not study.
+      br
+      p #[strong But that's not it]
+      .textBox
+        p Your habits, your attitude, how to understand the complex and memorise thousands of words efficiently. There is a myriad of new technologies, software, as well as theories that your local school teacher probably has no idea about, nor could he use such advice in a classroom. 
+        h5.h5 See what they're missing out on
+        button(@click="router.push({name: 'Outdated'})" ) Problems of the Outdated
       
       h2 How do I know? 
       i.fas.fa-arrow-down
       
   section.giants
     .container
-      h4 I organise information such that similar stuff is not overhyped and bottlenecks are not overlooked. 
-      h4 And I follow the BEST!
-      h4 Resting on the shoulders of Giants:
+      h3.h3 I organise information such that similar stuff is not overhyped and bottlenecks are not overlooked. And I follow the BEST!
+      br 
+      br 
+      h2 Resting on the shoulders of Giants:
       GiantsSlider
   section
     .container
@@ -42,9 +46,9 @@
       h4 here it is.
       FullPicture
 
-  section 
+  section.dev
     .container
-      h3 support m 
+      h3 support me 
       h3 reach out to me!
     
       
@@ -115,5 +119,16 @@ section.changes {
 
 section.giants {
   background: #eee;
+}
+
+.textBox {
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: left;
+}
+h5.h5 {
+  font-family: roboto;
+  font-size: 18px;
 }
 </style>

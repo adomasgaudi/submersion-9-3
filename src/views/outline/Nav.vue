@@ -7,7 +7,13 @@
       i.fas.fa-bars(@click='barsDropToggle')
   .barsDrop.maxh0
     .container
-      p lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem 
+      h2 coming soon
+      br
+      br
+      br
+      br
+      br
+      br
   
 </template>
 

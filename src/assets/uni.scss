@@ -6,7 +6,7 @@
 
 // hidden parts
 .dev.devNone {
-  display: none;
+  display: none !important;
 }
 ////////////////////////////////////////////////////
 
@@ -185,7 +185,7 @@ h1,
 h2 {
   font-family: "Roboto", sans-serif;
   text-align: center;
-  margin-top: 10rem;
+  // margin-top: 10rem;
 }
 .h5 {
   font-family: "Roboto", sans-serif;

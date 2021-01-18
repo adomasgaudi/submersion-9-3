@@ -12,7 +12,11 @@
       h3 Words
       h3 grammar
       h3 context
-      h1 content
+      h2 Content
+      p For beginners the content might be in apps such as duolingo, lingodeer and so on. I recomend you try LingQ (12EUR/m) ultil you get decent at basic text.
+      p Reading is harmful for your accent. This might seem absurd as it is one of the best ways to improve your language ability. However, if you're reading without any audio, you will automatically subvocalise most of the words you see. And regardless of how good your pronunciation is, you'll always be guessing as to how a particular word might be pronounced. Now, after a certain point, the harm that comes from that is negligent compared to the gains of reading. But any beginners in a language should be aware, that they need to catch up their listening skills to their reading skills or else they will suffer from crystalised bad pronunciation habits. The best strategy, I think might be to read intensely for a month or two and then catch up with listening. Especially in the beginning where you're making huge progress. 
+      h3 Where to read?
+      p Create an Amazon account and download the kindle app on your ipad/iphone/android/tablet. It doesn't matter if you don't have a tablet, reading is very similar on a phone. All of the features of the app will still work. 
 
 
 
@@ -111,6 +115,12 @@ export default {
     border-radius: 5px 5px 0px 0px;
     border: 1px solid black;
     margin: 0px 0.1rem;
+    &:hover {
+      background: rgb(202, 202, 202);
+      // color: white;
+      transform: scale(1.05);
+      transition: 0.2s;
+    }
   }
   .activeTab {
     // background: yellow;
