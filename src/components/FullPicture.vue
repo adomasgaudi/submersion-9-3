@@ -6,6 +6,7 @@
     span.tab(@click='openTab(3)' ) Life
   .tabBox(v-if="ss.tab === 1")
     h3 -- coming soon --
+    //- nnnnnn
     .devspan.dev
       p Language - everything that directly influences your ability to use the language. Which means specific, grammar, vocab, phonological information for learning as well as content sources.
       h3 Phonetics
