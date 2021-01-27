@@ -78,23 +78,27 @@ const slide = (direction: n, cards: n, sliderClass: string, itemClass: string ) 
 
 
 
-const cexNone = (btnClass: string, onClass: string, onClassStyle: string) => {
+const cexNone = (btnClass: string, onClass: string, onClassStyle: string, textClass: string) => {
   addEventListener("click", e => {
     if (
+      e.target && 
       (e.target as HTMLElement).classList.value.includes(btnClass) &&
       ((e.target as HTMLElement).parentElement
-        ?.nextElementSibling as HTMLElement)
-    ) {
-      const sibling = (e.target as HTMLElement).parentElement
-        ?.nextElementSibling as HTMLElement;
+      ?.nextElementSibling as HTMLElement)
+      ) {
+      //  console.log( 'hi', (e.target as HTMLElement).getElementsByClassName(textClass))
+       const sibling = (e.target as HTMLElement).getElementsByClassName(textClass)
+        console.log(sibling[0])
+      // const sibling = (e.target as HTMLElement).parentElement?.nextElementSibling as HTMLElement;
+      // console.log(sibling)
       //action
       // turn off
-      if(sibling.classList.value.includes(onClassStyle)){
+      if(sibling[0].classList.value.includes(onClassStyle)){
         // sibling.classList.remove(onClass)
-        sibling.classList.remove(onClassStyle); 
+        sibling[0].classList.remove(onClassStyle); 
       }else{ //turn on
         // sibling.classList.add(onClass)
-        sibling.classList.add(onClassStyle); 
+        sibling[0].classList.add(onClassStyle); 
       }
       // sibling.classList.toggle(onClass);
       // setTimeout(()=>{

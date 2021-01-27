@@ -4,7 +4,7 @@
     .container
 
       h1 Learning complex things
-      p In the context of language learning this means studying grammar or some sort of expressions, bacause those are the only #[span.exBtn complex] things to understand. 
+      p In the context of language learning this means studying grammar or some sort of expressions, bacause those are the only #[span.exBtn complex #[span.exText Don't missunderstand the meaning of complex. A language may be difficult to learn, but for the most part it is not complex, rather it is comprised of thousands of simple things. On the other hand, something like the foundations of quantum mechanics may be quite easy to learn as there might not be that many things to understand (probably not), but those few things might be very complex. ]]  things to understand. 
       p.exText Don't missunderstand the meaning of complex. A language may be difficult to learn, but for the most part it is not complex, rather it is comprised of thousands of simple things. On the other hand, something like the foundations of quantum mechanics may be quite easy to learn as there might not be that many things to understand (probably not), but those few things might be very complex. 
 
       span #[span.h5.exHeading Studying grammar is not as usefull as you might think.] 
@@ -65,8 +65,8 @@ export default {
     //......................................
 
     onMounted(() => {
-      cexNone("exBtn", "exOn", "exStyleSpan");
-      cexNone("exHeading", "exOn", "exStylePara");
+      cexNone("exBtn", "exOn", "exStyleSpan", "exText");
+      // cexNone("exHeading", "exOn", "exStylePara");
     });
     ////////////////////////
     return {

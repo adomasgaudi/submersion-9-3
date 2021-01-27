@@ -123,6 +123,7 @@ iframe {
 
 //text
 .exBtn {
+  position: relative;
   border-bottom: 2px solid rgb(255, 72, 0);
   cursor: pointer;
   &:hover {
@@ -133,6 +134,8 @@ iframe {
   max-height: 0px;
   overflow: hidden;
   display: block;
+  max-width: 500px;
+  width: 300px;
 
   transition: 0.5s;
 
@@ -145,6 +148,7 @@ iframe {
     0 16px 112px rgba(0, 0, 0, 0.02);
 
   position: absolute;
+  top: 1.5rem;
 }
 .exPara {
   max-height: 0px;
