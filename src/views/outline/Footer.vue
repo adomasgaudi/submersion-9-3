@@ -1,4 +1,5 @@
 <template lang="pug">
+//- #Footer
 footer.real
   .container
     p cool 
@@ -62,7 +63,7 @@ footer.menu {
   bottom: 0px;
   left: 0;
   width: 100%;
-  background: #00c090;
+  // background: #00c090;
 
   //in
   .container {

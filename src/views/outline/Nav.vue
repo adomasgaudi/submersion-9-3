@@ -4,7 +4,9 @@
     .container
       span.submersion(@click='router.push({name: "Map"})') Submersion
       .devBtn(@click="devToggle")
-      i.fas.fa-bars(@click='barsDropToggle')
+      .rightBox
+        i.fas.fa-chess-knight(@click='changeTheme')
+        i.fas.fa-bars(@click='barsDropToggle')
   .barsDrop.maxh0
     .container
       h2 coming soon
@@ -48,6 +50,14 @@ export default {
       }
     };
 
+    const changeTheme = () => {
+      const body = document.querySelector("body");
+      if (body) {
+        body.classList.toggle("lightTheme");
+        body.classList.toggle("darkTheme");
+      }
+    };
+
     // const devToggle = () => {
     //   const devs = cqueA(".dev");
     //   devs.forEach(item => {
@@ -66,7 +76,8 @@ export default {
       // ss, sg
       router,
       barsDropToggle,
-      devToggle
+      devToggle,
+      changeTheme
     };
   }
 };
@@ -75,7 +86,7 @@ export default {
 <style lang="scss">
 #Nav {
   .barsDrop {
-    background: #00c090;
+    // background: #00c090;
   }
   .maxh0 {
     max-height: 0px !important;
@@ -93,7 +104,7 @@ export default {
     // padding: auto;
     display: flex;
     justify-content: center;
-    background: #00c090;
+    // background: #00c090;
     border-bottom: 1px solid rgb(44, 44, 44);
     // margin-bottom: 10rem;
 
@@ -117,6 +128,7 @@ export default {
     }
     .fas {
       font-size: 24px;
+      margin-right: 1rem;
     }
     .submersion {
       font-size: 26px;
@@ -132,6 +144,9 @@ export default {
     bottom: 50px;
     right: 0;
     z-index: 100;
+  }
+
+  .rightBox {
   }
 }
 </style>

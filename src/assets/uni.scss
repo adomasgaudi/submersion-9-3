@@ -31,15 +31,75 @@ html {
 
 // main styles containers
 ////////////////////////
+
+#Nav,
+footer {
+  background: rgb(0, 217, 163);
+  background: linear-gradient(
+    90deg,
+    rgb(0, 255, 191) 0%,
+    rgba(0, 173, 130, 1) 98%,
+    rgba(0, 147, 110, 1) 100%
+  );
+}
+nav {
+  background: rgba(0, 0, 0, 0.1);
+}
+
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+h1 {
+  margin-bottom: 2rem;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-weight: bold;
+  // margin-top: 10rem;
+}
+h4 {
+  font-weight: 500;
+  font-size: 22px;
+}
+.h5 {
+  // font-weight: bold;
+
+  // font-size: 1.5em;
+
+  // margin: 2rem 0rem 1rem 0rem;
+  // text-shadow: -1px 2px 3px rgba(225, 48, 0, 0.2);
+}
 
 body {
-  background: #f9f9f9;
-  color: #303030;
-  font-family: sans-serif;
-  text-align: center;
-  font-family: "Fira Sans", sans-serif;
+  // font-family: "Roboto", sans-serif;
+}
+
+body.lightTheme {
+  // color: #12181b;
+  color: red !important;
+  // color: #303030;
+  background: #f8f8f8;
+  h1,
+  h2 {
+    text-align: center;
+    // margin-top: 10rem;
+  }
+
+  .h5 {
+    // font-family: "Roboto", sans-serif;
+    // font-weight: bold;
+
+    // font-size: 1.5em;
+
+    // margin: 2rem 0rem 1rem 0rem;
+    // text-shadow: -1px 2px 3px rgba(225, 48, 0, 0.2);
+  }
+}
+body.darkTheme {
+  color: #62899c;
+  // color: #303030;
+  background: #12181b;
 }
 
 section {
@@ -183,24 +243,6 @@ iframe {
     0 9.4px 25px rgba(0, 0, 0, 0.035), 0 12.7px 46.8px rgba(0, 0, 0, 0.028),
     0 16px 112px rgba(0, 0, 0, 0.02);
   // transition: 1s;
-}
-
-h1,
-h2 {
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-  // margin-top: 10rem;
-}
-.h5 {
-  font-family: "Roboto", sans-serif;
-  // font-weight: bold;
-
-  // font-size: 1.5em;
-  display: block;
-  margin-bottom: 0;
-
-  // margin: 2rem 0rem 1rem 0rem;
-  text-shadow: -1px 2px 3px rgba(225, 48, 0, 0.2);
 }
 
 .a {

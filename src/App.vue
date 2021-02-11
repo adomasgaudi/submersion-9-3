@@ -39,13 +39,6 @@ export default {
 };
 </script>
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 .wrapper {
   min-height: 100vh;
 }
@@ -69,7 +62,6 @@ export default {
   footer.side {
     min-width: 62px;
     height: 100vh;
-    background: #00c090;
   }
   .router {
     margin: 0 auto;

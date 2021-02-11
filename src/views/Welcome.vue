@@ -1,11 +1,14 @@
 <template lang="pug">
 #welcome
-  section.changes
+  section.welcome1
     .container
-      h1 Welcome
-      h4 view on smartphone pls
-      h2.mid There have been changes in the Language Learning Comunity!
-      span check it out
+      h3 Welcome to
+      h1.title Submersion
+      //- h1 
+      //-   span Welcome to
+      //-   span Submersion
+      h4 The language learning community is changing quickly. New tech, new research and new philosophies are disrupting tranditional ways of learning.
+      h2 Update your learning style
       br
       br
       br
@@ -95,16 +98,30 @@ export default {
   }
 }
 
-section.changes {
-  color: #005c45;
-  text-shadow: -1px 2px 9px rgba(150, 150, 150, 0.5);
-  h1,
-  h2 {
-    font-weight: bold;
+section.welcome1 {
+  h1 {
+    span {
+      display: block;
+    }
   }
+  .title {
+    margin-bottom: 5rem;
+  }
+  h4 {
+    text-align: left;
+  }
+  h3 {
+    text-align: center;
+  }
+  // color: #005c45;
+  // text-shadow: -1px 2px 9px rgba(150, 150, 150, 0.5);
+  // h1,
+  // h2 {
+  //   font-weight: bold;
+  // }
 
-  font-weight: bold;
-  background: #eeeeee;
+  // font-weight: bold;
+  // background: #eeeeee;
   span.btn {
     display: inline-block;
     color: white;
@@ -118,7 +135,7 @@ section.changes {
 }
 
 section.giants {
-  background: #eee;
+  // background: #eee;
 }
 
 .textBox {
@@ -128,7 +145,7 @@ section.giants {
   text-align: left;
 }
 h5.h5 {
-  font-family: roboto;
+  // font-family: roboto;
   font-size: 18px;
 }
 </style>
