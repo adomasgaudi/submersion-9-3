@@ -4,15 +4,25 @@
     .container
       h3 Welcome to
       h1.title Submersion
-      //- h1 
-      //-   span Welcome to
-      //-   span Submersion
-      h4 The language learning community is changing quickly. New tech, new research and new philosophies are disrupting tranditional ways of learning.
-      h2 Update your learning style
-      br
-      br
-      br
-      i.fas.fa-arrow-down
+      h4.text-center The language learning community is changing quickly. Keep up.
+      .techBox
+        .row 
+          .col
+            .inside 
+              h4.text-center.fas.fa-microchip
+              h4.text-center New tech
+          .col 
+            .inside
+              h4.text-center.fas.fa-flask
+              h4.text-center New Research 
+          .col 
+            .inside
+              h4.text-center.fas.fa-graduation-cap
+              h4.text-center New Methods 
+      //- h4.text-center Time to disrupt tranditional ways of learning.
+      button Update your learning
+      //- h2 Update your learning style
+      //- i.fas.fa-arrow-down
   section.system
     .container
       h2 The new way to learn is through immersion, not study.
@@ -87,65 +97,93 @@ export default {
 </script>
 
 <style lang="scss">
-#welcome section {
-  min-height: calc(100vh - 48px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .mid {
-    margin-top: 4rem;
-    margin-bottom: 8rem;
-  }
-}
-
-section.welcome1 {
-  h1 {
-    span {
-      display: block;
+#welcome {
+  section {
+    min-height: calc(100vh - 48px);
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+    .mid {
+      margin-top: 4rem;
+      margin-bottom: 8rem;
     }
   }
-  .title {
-    margin-bottom: 5rem;
+
+  section.welcome1 {
+    padding-top: 3rem;
+
+    h1 {
+      span {
+        display: block;
+      }
+    }
+    .title {
+      margin-bottom: 3rem;
+    }
+    h4 {
+      text-align: left;
+    }
+    h3 {
+      text-align: center;
+    }
+    // color: #005c45;
+    // text-shadow: -1px 2px 9px rgba(150, 150, 150, 0.5);
+    // h1,
+    // h2 {
+    //   font-weight: bold;
+    // }
+
+    // font-weight: bold;
+    // background: #eeeeee;
+    span.btn {
+      display: inline-block;
+      color: white;
+      background: #00c090;
+      padding: 0.2rem 2rem;
+      border-radius: 20px;
+    }
+    .fa-arrow-down {
+      font-size: 30px;
+    }
+    .techBox {
+      margin: 0.5rem 0 1rem 0;
+      .col {
+        padding: 0.3rem;
+      }
+      .inside {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        height: 100%;
+        border-bottom: 1px solid #7a7a7a;
+        // border-radius: 4px;
+        padding: 0.3rem;
+        .fas {
+          color: #4b4a4a;
+        }
+      }
+    }
   }
-  h4 {
+
+  //
+  //
+  //
+  //
+  //
+
+  section.giants {
+    // background: #eee;
+  }
+
+  .textBox {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 1rem;
     text-align: left;
   }
-  h3 {
-    text-align: center;
+  h5.h5 {
+    // font-family: roboto;
+    font-size: 18px;
   }
-  // color: #005c45;
-  // text-shadow: -1px 2px 9px rgba(150, 150, 150, 0.5);
-  // h1,
-  // h2 {
-  //   font-weight: bold;
-  // }
-
-  // font-weight: bold;
-  // background: #eeeeee;
-  span.btn {
-    display: inline-block;
-    color: white;
-    background: #00c090;
-    padding: 0.2rem 2rem;
-    border-radius: 20px;
-  }
-  .fa-arrow-down {
-    font-size: 30px;
-  }
-}
-
-section.giants {
-  // background: #eee;
-}
-
-.textBox {
-  border: 1px solid #000;
-  border-radius: 10px;
-  padding: 1rem;
-  text-align: left;
-}
-h5.h5 {
-  // font-family: roboto;
-  font-size: 18px;
 }
 </style>

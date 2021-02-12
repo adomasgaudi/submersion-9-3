@@ -24,20 +24,45 @@ html {
 }
 //////////////////////////////////////////////////
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 //Extend css from bootstrap
 .navbar {
   @extend .container;
 }
 
-// main styles containers
+//
+//
+//
+//
+//
+//
+
+// Colors
 ////////////////////////
+$dark: #12181b;
+
+$caribean-1: rgb(0, 217, 163);
+$caribean: rgb(0, 217, 163);
+$caribean1: rgb(0, 217, 163);
+$caribean2: rgb(0, 217, 163);
+// $border-dark: rgba($base-color, 0.88);
 
 #Nav,
 footer {
-  background: rgb(0, 217, 163);
+  background: $caribean;
   background: linear-gradient(
     90deg,
-    rgb(0, 255, 191) 0%,
+    $caribean-1 0%,
     rgba(0, 173, 130, 1) 98%,
     rgba(0, 147, 110, 1) 100%
   );
@@ -59,7 +84,7 @@ h2 {
   // margin-top: 10rem;
 }
 h4 {
-  font-weight: 500;
+  font-weight: 300;
   font-size: 22px;
 }
 .h5 {
@@ -77,7 +102,7 @@ body {
 
 body.lightTheme {
   // color: #12181b;
-  color: red !important;
+  color: #12181b;
   // color: #303030;
   background: #f8f8f8;
   h1,
@@ -89,15 +114,19 @@ body.lightTheme {
   .h5 {
     // font-family: "Roboto", sans-serif;
     // font-weight: bold;
-
     // font-size: 1.5em;
-
     // margin: 2rem 0rem 1rem 0rem;
     // text-shadow: -1px 2px 3px rgba(225, 48, 0, 0.2);
   }
 }
+
 body.darkTheme {
-  color: #62899c;
+  h1,
+  h2,
+  i {
+    color: #fff;
+  }
+  color: #b2becd;
   // color: #303030;
   background: #12181b;
 }
