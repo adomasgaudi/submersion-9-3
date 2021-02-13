@@ -4,25 +4,35 @@
     .container
       h3 Welcome to
       h1.title Submersion
-      h4.text-center The language learning community is changing quickly. Keep up.
+      h4.text-center.mb-5 The language learning community is changing quickly. Keep up.
       .techBox
         .row 
           .col
             .inside 
-              h4.text-center.fas.fa-microchip
-              h4.text-center New tech
-          .col 
-            .inside
               h4.text-center.fas.fa-flask
-              h4.text-center New Research 
+              h4.text-center #[strong New Sources]
+            .insideList
+              li.block-list New science
+              li.block-list New theories
+              li.block-list New methods
           .col 
             .inside
-              h4.text-center.fas.fa-graduation-cap
-              h4.text-center New Methods 
+              h4.text-center.fas.fa-microchip
+              h4.text-center #[strong New Tools]
+            .insideList
+              li.block-list New Software
+              li.block-list New Hardware
       //- h4.text-center Time to disrupt tranditional ways of learning.
-      button Update your learning
+      h2 Upgrade your learning
+      h2 
+        span.fas.fa-chevron-down  
+        span    
+        span.fas.fa-chevron-down  
+        span    
+        span.fas.fa-chevron-down 
       //- h2 Update your learning style
       //- i.fas.fa-arrow-down
+  hr(style="border-top: dashed 2px grey;")
   section.system
     .container
       h2 The new way to learn is through immersion, not study.
@@ -36,6 +46,7 @@
       h2 How do I know? 
       i.fas.fa-arrow-down
       
+  hr(style="border-top: dashed 2px grey;")
   section.giants
     .container
       h3.h3 I organise information such that similar stuff is not overhyped and bottlenecks are not overlooked. And I follow the BEST!
@@ -154,7 +165,6 @@ export default {
         display: flex;
         flex-flow: column;
         justify-content: space-between;
-        height: 100%;
         border-bottom: 1px solid #7a7a7a;
         // border-radius: 4px;
         padding: 0.3rem;
@@ -162,9 +172,19 @@ export default {
           color: #4b4a4a;
         }
       }
+      .insideList{
+        margin-top: 1rem;
+      }
+      .block-list{
+        text-align: center;
+        font-weight: 300;
+      }
     }
   }
 
+  section.system{
+    // background: rgb(237, 237, 250);
+  }
   //
   //
   //
