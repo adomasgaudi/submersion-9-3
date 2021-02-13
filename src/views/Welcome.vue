@@ -26,32 +26,49 @@
       h2 Upgrade your learning
       h2 
         span.fas.fa-chevron-down  
-        span    
         span.fas.fa-chevron-down  
-        span    
         span.fas.fa-chevron-down 
       //- h2 Update your learning style
       //- i.fas.fa-arrow-down
   hr(style="border-top: dashed 2px grey;")
+
+  //- 
+  //- 
+  //- 
+  //- 
+  //- 
+  //- 
+
   section.system
     .container
-      h2 The new way to learn is through immersion, not study.
-      br
-      p #[strong But that's not it]
-      .textBox
-        p Your habits, your attitude, how to understand the complex and memorise thousands of words efficiently. There is a myriad of new technologies, software, as well as theories that your local school teacher probably has no idea about, nor could he use such advice in a classroom. 
-        h5.h5 See what they're missing out on
-        button(@click="router.push({name: 'Outdated'})" ) Problems of the Outdated
-      
-      h2 How do I know? 
-      i.fas.fa-arrow-down
-      
+      .modernCard
+        h2.title The new way to learn is through #[strong(style="color: #00c090;") immersion], not #[strong(style="color: #00c090;") study]
+        .textBox
+          p Your habits, your attitude, how to understand the complex and how to memorise thousands of words efficiently. There is a myriad of new tech, software, theories, methods that, generally, #[strong you will not find] in a traditional classroom. 
+        .bottomSide
+          h2.text-left See Traditional 
+        
+      h2 hmmm
+      h2 
+        span.fas.fa-chevron-down  
+        span.fas.fa-chevron-down  
+        span.fas.fa-chevron-down 
+
   hr(style="border-top: dashed 2px grey;")
+
+  //-
+  //-
+  //-
+  //-
+  //-
+  //-
+  //-
+  //-
+  //-
+
   section.giants
     .container
-      h3.h3 I organise information such that similar stuff is not overhyped and bottlenecks are not overlooked. And I follow the BEST!
-      br 
-      br 
+      h4.text-center I organise information such that similar stuff is not overhyped and bottlenecks are not overlooked. And I follow the BEST!
       h2 Resting on the shoulders of Giants:
       GiantsSlider
   section
@@ -181,10 +198,56 @@ export default {
       }
     }
   }
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
 
   section.system{
     // background: rgb(237, 237, 250);
+    .container{
+      padding: 1rem;
+      .modernCard{
+        h2.title{font-size: 28px; margin-bottom: 2rem;}
+        // border: 1px solid black;
+        box-shadow: rgba(0,0,0,0.2) 0px 10px 20px 0px;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        
+        .bottomSide{
+          background: rgb(252, 107, 82);
+
+          margin: 5rem -1rem -1rem -1rem;
+          padding: 1rem;
+        }
+        }
+      }
+
   }
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
   //
   //
   //
@@ -196,10 +259,10 @@ export default {
   }
 
   .textBox {
-    border: 1px solid #000;
-    border-radius: 10px;
-    padding: 1rem;
-    text-align: left;
+    // border: 1px solid #000;
+    // border-radius: 10px;
+    // padding: 1rem;
+    // text-align: left;
   }
   h5.h5 {
     // font-family: roboto;
