@@ -36,6 +36,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../../assets/uniTheme.scss';
 #Rookies {
   section {
     p {

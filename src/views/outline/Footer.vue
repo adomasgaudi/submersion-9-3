@@ -46,6 +46,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../../assets/uniTheme.scss';
 footer.real {
   margin-top: 100px;
   margin-bottom: 48px;

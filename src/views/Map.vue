@@ -1,5 +1,5 @@
 <template lang="pug">
-#Home
+#Map
   section
     .container
       h2 The Big Picture 
@@ -25,7 +25,8 @@ export default {
 </script>
 
 <style lang="scss">
-#Home {
+@import '../assets/uniTheme.scss';
+#Map {
   p {
     text-align: left;
   }

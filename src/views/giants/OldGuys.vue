@@ -1,5 +1,6 @@
 <template lang="pug">
-h1 old guys 
+#OldGuys
+  h1 old guys 
 </template>
 
 <script lang="ts">
@@ -29,6 +30,7 @@ export default {
 </script>
 
 <style lang="scss">
-// #template {
+@import '../../assets/uniTheme.scss';
+// #OldGuys {
 // }
 </style>

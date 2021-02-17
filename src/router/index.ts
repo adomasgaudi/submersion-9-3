@@ -8,6 +8,7 @@ import OldGuys from "../views/giants/OldGuys.vue";
 import Wise from "../views/giants/Wise.vue";
 import Articles from "../views/Articles.vue";
 import Complex from "../views/articles/learning/Complex.vue";
+import Immersion from "../views/articles/learning/Immersion.vue";
 
 const routes: Array<RouteRecordRaw> = [
   { path: "/map", name: "Map", component: Map },
@@ -18,7 +19,8 @@ const routes: Array<RouteRecordRaw> = [
   { path: "/oldGuys", name: "OldGuys", component: OldGuys },
   { path: "/wise", name: "Wise", component: Wise },
   { path: "/articles", name: "Articles", component: Articles },
-  { path: "/complex", name: "Complex", component: Complex }
+  { path: "/complex", name: "Complex", component: Complex },
+  { path: "/immersion", name: "Immersion", component: Immersion }
 ];
 
 const router = createRouter({

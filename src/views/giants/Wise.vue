@@ -1,5 +1,6 @@
 <template lang="pug">
-h1 Wise 
+#Wise
+  h1 Wise 
 </template>
 
 <script lang="ts">
@@ -29,6 +30,7 @@ export default {
 </script>
 
 <style lang="scss">
-// #template {
+@import '../../assets/uniTheme.scss';
+// #Wise {
 // }
 </style>

@@ -26,8 +26,6 @@
       h2 Upgrade your learning
       h2 
         span.fas.fa-chevron-down  
-        span.fas.fa-chevron-down  
-        span.fas.fa-chevron-down 
       //- h2 Update your learning style
       //- i.fas.fa-arrow-down
   hr(style="border-top: dashed 2px grey;")
@@ -41,18 +39,25 @@
 
   section.system
     .container
-      .modernCard
+      .imgCard.shadowAG.dev
+        img(src="../assets/phaidon.jpg")
+        
+        .bottomSide
+          h2.text-left See Traditional 
+        
+      .modernCard.shadowAG(@click="router.push({name: 'Immersion'})")
         h2.title The new way to learn is through #[strong(style="color: #00c090;") immersion], not #[strong(style="color: #00c090;") study]
         .textBox
-          p Your habits, your attitude, how to understand the complex and how to memorise thousands of words efficiently. There is a myriad of new tech, software, theories, methods that, generally, #[strong you will not find] in a traditional classroom. 
+          p The main difference between #[strong(style='color: #00c090') Immersion] and #[strong(style='color: #00c090') Studying] is consciousness. Immersion is the process of using a language to accomplish some other task, thus the deciphering of the language is mostly #[strong(style='color: #00c090') subconsciously]. Studying is the process of thinking about the language and its use in different situations, and so it forces you to think about the language use #[strong(style='color: #00c090') consciously]. 
+          p #[strong(style='color: #00c090; text-decoration: underline;') read more...]
+          
+          //- p Your habits, your attitude, how to understand the complex and how to memorise thousands of words efficiently. There is a myriad of new tech, software, theories, methods that, generally, #[strong you will not find] in a traditional classroom. 
         .bottomSide
           h2.text-left See Traditional 
         
       h2 hmmm
       h2 
         span.fas.fa-chevron-down  
-        span.fas.fa-chevron-down  
-        span.fas.fa-chevron-down 
 
   hr(style="border-top: dashed 2px grey;")
 
@@ -125,6 +130,9 @@ export default {
 </script>
 
 <style lang="scss">
+
+@import '../assets/uniTheme.scss';
+
 #welcome {
   section {
     min-height: calc(100vh - 48px);
@@ -166,7 +174,7 @@ export default {
     span.btn {
       display: inline-block;
       color: white;
-      background: #00c090;
+      // background: $caribean;
       padding: 0.2rem 2rem;
       border-radius: 20px;
     }
@@ -174,7 +182,7 @@ export default {
       font-size: 30px;
     }
     .techBox {
-      margin: 0.5rem 0 1rem 0;
+      margin: 0.5rem 0 2rem 0;
       .col {
         padding: 0.3rem;
       }
@@ -217,12 +225,15 @@ export default {
 
   section.system{
     // background: rgb(237, 237, 250);
+
     .container{
       padding: 1rem;
+      
       .modernCard{
         h2.title{font-size: 28px; margin-bottom: 2rem;}
         // border: 1px solid black;
-        box-shadow: rgba(0,0,0,0.2) 0px 10px 20px 0px;
+        
+        // box-shadow: $shadowDark;
         padding: 1rem;
         margin-bottom: 2rem;
         

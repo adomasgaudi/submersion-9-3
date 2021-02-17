@@ -1,7 +1,8 @@
 <template lang="pug">
-h1 The Giants
-h2 Coming soon
-Rookies
+#Giants
+  h1 The Giants
+  h2 Coming soon
+  Rookies
 </template>
 
 <script lang="ts">
@@ -29,6 +30,7 @@ export default {
 </script>
 
 <style lang="scss">
-// #template {
+@import '../assets/uniTheme.scss';
+// #Giants {
 // }
 </style>

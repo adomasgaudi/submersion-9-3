@@ -56,6 +56,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../assets/uniTheme.scss';
 #ArticlesLine {
   .artc-window {
     // display: flex;

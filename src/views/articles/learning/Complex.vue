@@ -77,6 +77,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../../../assets/uniTheme.scss';
 #Learning {
   text-align: left;
 }

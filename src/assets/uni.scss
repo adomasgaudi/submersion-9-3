@@ -1,29 +1,33 @@
-//////////////////////////////////////////////////
 // testing box model
 * {
   // outline: dotted thin black;
 }
 
-// hidden parts
+// testing hidden parts
 .dev.devNone {
   display: none !important;
 }
-////////////////////////////////////////////////////
 
-// basic bootstrap
-@import "./bootscss/bootstrap.scss";
+///////////////////////////////
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-// General startig css
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-html {
-  scroll-behavior: smooth;
-}
-//////////////////////////////////////////////////
+@import "./uniInit.scss";
+@import "./uniFonts.scss";
+@import "./uniTheme.scss";
 
+//
+//
+//
 //
 //
 //
@@ -40,111 +44,7 @@ html {
   @extend .container;
 }
 
-//
-//
-//
-//
-//
-//
-
-// Colors
-////////////////////////
-$dark: #12181b;
-
-$caribean-1: rgba(0, 217, 163, 1);
-$caribean: rgba(0, 217, 163, 1);
-$caribean1: rgba(0, 217, 163, 1);
-$caribean2: rgba(0, 217, 163, 1);
-// $border-dark: rgba($base-color, 0.88);
-
-//
-//
-//
-//
-
-// 
-#Nav,
-footer {
-  background: $caribean;
-  background: linear-gradient(
-    90deg,
-    $caribean-1 0%,
-    $caribean1 98%,
-    $caribean2 100%,
-  );
-}
-nav {
-  background: rgba(0, 0, 0, 0.1);
-}
-
-//
-//
-//
-
-// fonts
-@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
-h1 {
-  margin-bottom: 2rem;
-}
-
-@media (min-width: 678px){
-  h1{
-    font-size: 70px;
-  }
-}
-h1,
-h2 {
-  text-align: center;
-  font-weight: bold;
-}
-h4 {
-  font-weight: 300;
-  font-size: 22px;
-}
-.h5 {
-  // font-weight: bold;
-
-  // font-size: 1.5em;
-
-  // margin: 2rem 0rem 1rem 0rem;
-  // text-shadow: -1px 2px 3px rgba(225, 48, 0, 0.2);
-}
-
-body {
-  // font-family: "Roboto", sans-serif;
-}
-
-body.lightTheme {
-  // color: #12181b;
-  color: #12181b;
-  // color: #303030;
-  background: #f8f8f8;
-  h1,
-  h2 {
-    text-align: center;
-    // margin-top: 10rem;
-  }
-
-  .h5 {
-    // font-family: "Roboto", sans-serif;
-    // font-weight: bold;
-    // font-size: 1.5em;
-    // margin: 2rem 0rem 1rem 0rem;
-    // text-shadow: -1px 2px 3px rgba(225, 48, 0, 0.2);
-  }
-}
-
-body.darkTheme {
-  h1,
-  h2,
-  i {
-    color: #fff;
-  }
-  color: #b2becd;
-  // color: #303030;
-  background: #12181b;
-}
+// general css
 
 section {
   padding-top: 50px;
@@ -159,7 +59,13 @@ form {
   border-radius: 10px;
 }
 
+
+
+
+
+
 //elements styles
+/////////////////
 /////////////////
 
 label,
@@ -307,4 +213,3 @@ iframe {
   }
 }
 
-// active

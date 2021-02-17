@@ -1,12 +1,13 @@
 <template lang="pug">
-.wrapper
-  Nav
-  .mainview
-    //- make space for floating footer
-    footer.side 
-    .router
-      router-view
-Footer
+#App
+  .wrapper
+    Nav
+    .mainview
+      //- make space for floating footer
+      footer.side 
+      .router
+        router-view
+  Footer
 </template>
 
 <script>
@@ -38,8 +39,18 @@ export default {
   }
 };
 </script>
+
+//
+//
+//
+//
+//
+//
+
 <style lang="scss">
-.wrapper {
+@import './assets/uniTheme.scss';
+#App{
+  .wrapper {
   min-height: 100vh;
 }
 #nav {
@@ -75,4 +86,6 @@ export default {
 .devNone {
   display: none;
 }
+}
+
 </style>

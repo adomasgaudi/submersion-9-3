@@ -39,6 +39,7 @@ export default {
 </script>
 
 <style lang="scss">
+// @import 'xxx../assets/uniTheme.scss'
 // #template {
 //section{}
 // }

@@ -101,6 +101,7 @@ export default {
 // // // // // // // // // // // // // // // // // // // // //
 
 <style lang="scss">
+@import '../assets/uniTheme.scss';
 #Giantsslider {
   display: flex;
   flex-flow: column nowrap;
