@@ -11,7 +11,11 @@
 
       .card-item-outer( v-for="card in ss.cards")
         .card-item( @click="router.push({name: card.page})" )
-          img.square( :src='card.imgUrl' )
+          img(src='../assets/coloso.jpg' style='display: none;')
+          img(src='../assets/davinci.jpg' style='display: none;')
+          img(src='../assets/lastsupper.jpg' style='display: none;')
+          .squareBack
+            img.square( :src='card.imgUrl' )
           h3 {{card.title}}
           p {{card.description}}
         .card-back
@@ -196,10 +200,20 @@ export default {
       width: 250px;
       height: 250px;
       // background: red;
-      background-image: linear-gradient(to bottom, rgba(255, 144, 70, 0.733), rgba(196, 26, 26, 0.719));
-      box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.2);
-      border-radius: 20px;
       margin-bottom: 2rem;
+      opacity: 0.5;
+      border-radius: 20px;
+      object-fit: cover; 
+      object-position: 50% 10%;
+    }
+    .squareBack{
+      box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.3);
+      margin-bottom: 2rem;
+      border-radius: 20px;
+      width: 250px;
+      height: 250px;
+      background-image: linear-gradient(to bottom, rgba(255, 144, 70, 1), rgba(196, 26, 26, 1));
+
     }
   }
 }
