@@ -49,7 +49,7 @@ const cLenEqual = (items: a, str: string, len: string, callback: a = console.log
 
 
 let count = 0;
-const slide = (direction: n, cards: n, sliderClass: string, itemClass: string ) => {
+const slide = (direction: n, cards: n, sliderClass: string, itemClass: string, speed = 0.3 ) => {
 
   //
   console.log({sliderClass, itemClass})
@@ -70,7 +70,7 @@ const slide = (direction: n, cards: n, sliderClass: string, itemClass: string ) 
   console.log({direction, count})
   if (slider && width) {
     slider.style.transform = `translateX(${(width * -count).toString()}px)`;
-    slider.style.transition = `0.3s`;
+    slider.style.transition = `${speed}s`;
   }
 };
 

@@ -3,9 +3,9 @@
   //- .card-shadow
   .card-window
     i.fas.fa-chevron-left( 
-      @click='slide(-1, ss.cards.length, ".card-slider", ".card-item-outer")')
+      @click='slide(-1, ss.cards.length, ".card-slider", ".card-item-outer", .8)')
     i.fas.fa-chevron-right( 
-      @click='slide(1, ss.cards.length, ".card-slider", ".card-item-outer")')
+      @click='slide(1, ss.cards.length, ".card-slider", ".card-item-outer", 1)')
     .card-slider
 
 

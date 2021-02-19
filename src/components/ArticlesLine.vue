@@ -2,9 +2,9 @@
 #ArticlesLine 
   .artc-window
     i.fas.fa-chevron-right(
-      @click='slide(1, 3, ".artc-slider", ".artc-item-outside")')
+      @click='slide(1, 3, ".artc-slider", ".artc-item-outside", 0.5)')
     i.fas.fa-chevron-left(
-      @click='slide(-1, 3, ".artc-slider", ".artc-item-outside" )')
+      @click='slide(-1, 3, ".artc-slider", ".artc-item-outside", 0.5 )')
     .artc-slider
       .artc-item-outside
         router-link.artc-item.shadowAG(:to="{name: 'Complex'}")
