@@ -4,7 +4,7 @@
     span.tab(@click='openTab(1)' ) Language
     span.tab(@click='openTab(2)') Learn
     span.tab(@click='openTab(3)' ) Life
-  .tabBox(v-if="ss.tab === 1")
+  .tabBox.shadowAG(v-if="ss.tab === 1")
     h3 -- coming soon --
     //- nnnnnn
     .devspan.dev
@@ -21,7 +21,7 @@
 
 
 
-  .tabBox(v-if="ss.tab === 2")
+  .tabBox.shadowAG(v-if="ss.tab === 2")
     ol.mainlist
       li Learning the Complex
       li Memorisation
@@ -35,7 +35,7 @@
 
 
 
-  .tabBox(v-if="ss.tab === 3")
+  .tabBox.shadowAG(v-if="ss.tab === 3")
     h3 -- I'm writing --
     .devspan.dev
       p  Life - activities that will not directly make you a better learner, but will improve you productivity such that you can learn better, and for longer and more focused...
@@ -111,30 +111,33 @@ export default {
   .tabBar {
     display: flex;
     justify-content: space-evenly;
+		margin-bottom: 1rem;
+		border: 1px solid rgb(161, 161, 161);
+		padding: .3rem;
     // border: 1px solid black;
   }
   .tab {
     background: #f9f9f9;
-    border-radius: 5px 5px 0px 0px;
-    border: 1px solid black;
-    margin: 0px 0.1rem;
+    border-radius: 3px;
+    text-align: center;
+    // border: 1px solid rgb(131, 131, 131);
+    margin: 0px 0.2rem;
+		font-weight: bold;
     &:hover {
-      background: rgb(202, 202, 202);
+      background: #fc6b52;
       // color: white;
       transform: scale(1.05);
       transition: 0.2s;
     }
   }
   .activeTab {
-    // background: yellow;
-    border-bottom: none;
-    background: rgb(212, 212, 212);
+    background: #fc6b52;
   }
   .tabBox {
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-radius: 0px 0px 10px 10px;
+    // border-bottom: 1px solid black;
+    // border-left: 1px solid black;
+    // border-right: 1px solid black;
+    // border-radius: 0px 0px 10px 10px;
     padding: 0.5rem;
     text-align: left;
   }
@@ -149,5 +152,23 @@ export default {
     // font-family: roboto;
     padding-left: 1rem;
   }
+
+  .tabBox{
+
+		h2.title{font-size: 28px; margin-bottom: 2rem;}
+		// border: 1px solid black;
+		
+		// box-shadow: $shadowDark;
+		padding: 1rem;
+		margin-bottom: 2rem;
+		
+		.bottomSide{
+			background: rgb(252, 107, 82);
+
+			margin: 5rem -1rem -1rem -1rem;
+			padding: 1rem;
+		}
+	}
+		
 }
 </style>

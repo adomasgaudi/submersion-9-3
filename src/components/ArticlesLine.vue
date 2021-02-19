@@ -7,16 +7,16 @@
       @click='slide(-1, 3, ".artc-slider", ".artc-item-outside" )')
     .artc-slider
       .artc-item-outside
-        router-link.artc-item(:to="{name: 'Complex'}")
+        router-link.artc-item.shadowAG(:to="{name: 'Complex'}")
           h3 Learning Complex
           p some text would go nicely
       .artc-item-outside
-        .artc-item
-          h3 learning how to learn
+        .artc-item.shadowAG
+          h3 Learning how to learn
           p some text would go nicely
       .artc-item-outside
-        .artc-item
-          h3 philosophy
+        .artc-item.shadowAG
+          h3 Philosophy
           p some text would go nicely
 </template>
 
@@ -65,6 +65,7 @@ export default {
     // border: 1px solid #000;
     overflow: hidden;
     position: relative;
+    padding: 2rem 0;
   }
   .fa-chevron-right,
   .fa-chevron-left {
@@ -95,8 +96,8 @@ export default {
     display: block;
     // flex-flow: column nowrap;
     background: white;
-    border: 1px solid #000;
-    border-radius: 10px;
+    // border: 1px solid #000;
+    // border-radius: 10px;
 
     padding: 0.3rem 1rem;
     text-align: left;

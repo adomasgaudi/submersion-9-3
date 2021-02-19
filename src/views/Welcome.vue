@@ -39,11 +39,6 @@
 
   section.system
     .container
-      .imgCard.shadowAG.dev
-        img(src="../assets/phaidon.jpg")
-        
-        .bottomSide
-          h2.text-left See Traditional 
         
       .modernCard.shadowAG(@click="router.push({name: 'Immersion'})")
         h2.title The new way to learn is through #[strong(style="color: #00c090;") immersion], not #[strong(style="color: #00c090;") study]
@@ -73,31 +68,29 @@
 
   section.giants
     .container
-      h2 Resting on the shoulders of Giants:
-      h4.text-left I organise information such that similar stuff is not overhyped and bottlenecks are not overlooked. And I follow the BEST!
-      GiantsSlider
+      h2.text-left Resting on the shoulders of Giants:
+      p.p-long.text-left.mb-5 I organise information such that similar stuff is not overhyped and bottlenecks are not overlooked. 
+      GiantsSlider 
+  hr(style="border-top: dashed 2px grey;")
 
   section
     .container
-      h3 Honestly, they're great
-      h3 buuut...
-        
-  section.giants
-    .container
-      h4 They excell in different areas and specialise within their respective niches, thus sometimes missing certain important components. 
-      h4 what are they missing?
+      h2.text-left Honestly, they're all great
+      p.p-long Buuut... When taking a broader look often one single source will miss something important. Here are a few ideas that might be more often overlooked.
       ArticlesLine
+  hr(style="border-top: dashed 2px grey;")
 
-  section
+  section.fullpicture
     .container
-      h4 After as much as I've studied I felt for a long time as though I still don't get the full picture. Well, that why I made this blog. To get the full picture. 
-      h4 here it is.
+      h2.text-left Getting the full picture
+      p.p-long After as much as I've studied I felt for a long time as though I still don't understand how everything works together. Well, that why I made this blog. To get the full picture. Here it is so far.
       FullPicture
+  hr(style="border-top: dashed 2px grey;")
 
   section.dev
     .container
-      h3 support me 
-      h3 reach out to me!
+      h2 More content is to come 
+      h5 Got ideas? Suggestions? Corrections? Reach out!
     
       
 </template>
@@ -269,8 +262,8 @@ export default {
           margin: 5rem -1rem -1rem -1rem;
           padding: 1rem;
         }
-        }
       }
+    }
 
   }
   //
@@ -293,7 +286,8 @@ export default {
 
   section.giants {
     // background: #eee;
-    h2{ margin-bottom: 3rem;}
+    // h2{ margin-bottom: 3rem;}
+
   }
 
   //
