@@ -9,10 +9,10 @@
     //- nnnnnn
     .devspan.dev
       p Language - everything that directly influences your ability to use the language. Which means specific, grammar, vocab, phonological information for learning as well as content sources.
-      h3 Phonetics
-      h3 Words
-      h3 grammar
-      h3 context
+      h2 Phonetics
+      h2 Words
+      h2 Grammar
+      h2 Context
       h2 Content
       p For beginners the content might be in apps such as duolingo, lingodeer and so on. I recomend you try LingQ (12EUR/m) ultil you get decent at basic text.
       p Reading is harmful for your accent. This might seem absurd as it is one of the best ways to improve your language ability. However, if you're reading without any audio, you will automatically subvocalise most of the words you see. And regardless of how good your pronunciation is, you'll always be guessing as to how a particular word might be pronounced. Now, after a certain point, the harm that comes from that is negligent compared to the gains of reading. But any beginners in a language should be aware, that they need to catch up their listening skills to their reading skills or else they will suffer from crystalised bad pronunciation habits. The best strategy, I think might be to read intensely for a month or two and then catch up with listening. Especially in the beginning where you're making huge progress. 

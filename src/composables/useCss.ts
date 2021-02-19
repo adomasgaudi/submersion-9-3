@@ -70,7 +70,7 @@ const slide = (direction: n, cards: n, sliderClass: string, itemClass: string ) 
   console.log({direction, count})
   if (slider && width) {
     slider.style.transform = `translateX(${(width * -count).toString()}px)`;
-    slider.style.transition = `1s`;
+    slider.style.transition = `0.3s`;
   }
 };
 

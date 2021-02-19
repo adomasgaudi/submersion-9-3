@@ -8,16 +8,16 @@
     .artc-slider
       .artc-item-outside
         router-link.artc-item.shadowAG(:to="{name: 'Complex'}")
-          h3 Learning Complex
-          p some text would go nicely
+          p.p-info-text Learning
+          h3 Learning complex things
       .artc-item-outside
         .artc-item.shadowAG
+          p.p-info-text Learning
           h3 Learning how to learn
-          p some text would go nicely
       .artc-item-outside
         .artc-item.shadowAG
+          p.p-info-text Life
           h3 Philosophy
-          p some text would go nicely
 </template>
 
 <script lang="ts">
@@ -99,7 +99,9 @@ export default {
     // border: 1px solid #000;
     // border-radius: 10px;
 
-    padding: 0.3rem 1rem;
+    padding: 1rem 1rem;
+    border-radius: 2px;
+    border-bottom: 2px solid #00c090;
     text-align: left;
     p {
       margin-bottom: 0;
