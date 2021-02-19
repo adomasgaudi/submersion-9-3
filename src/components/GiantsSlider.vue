@@ -11,7 +11,7 @@
 
       .card-item-outer( v-for="card in ss.cards")
         .card-item( @click="router.push({name: card.page})" )
-          img.square( :src='card.imgUrl' )
+          .square
           h3 {{card.title}}
           p {{card.description}}
         .card-back
@@ -77,9 +77,7 @@ export default {
         //set card-back height to card-item height
         back.forEach((it, i) => {
           // console.log(it, item[i].offsetHeight);
-          let heightx = (item[i].offsetHeight)-60
-          if(heightx < 470){heightx = 470}
-          it.style.height = `${heightx}px`;
+          it.style.height = `${item[i].offsetHeight}px`;
         });
       }
     });
@@ -162,7 +160,7 @@ export default {
     display: flex;
     justify-content: center;
     position: relative;
-    margin-bottom: -2rem;
+    margin-bottom: 2rem;
   }
 
   .card-back {
@@ -183,7 +181,7 @@ export default {
     // height: 500px;
     z-index: 1;
     cursor: pointer;
-    margin-bottom: 1rem;
+    margin-bottom: 60px;
 
     display: flex;
     flex-flow: column nowrap;
@@ -195,8 +193,7 @@ export default {
       z-index: 2;
       width: 250px;
       height: 250px;
-      // background: red;
-      background-image: linear-gradient(to bottom, rgba(255, 144, 70, 0.733), rgba(196, 26, 26, 0.719));
+      background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
       box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.2);
       border-radius: 20px;
       margin-bottom: 2rem;

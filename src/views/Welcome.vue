@@ -73,10 +73,9 @@
 
   section.giants
     .container
+      h4.text-center I organise information such that similar stuff is not overhyped and bottlenecks are not overlooked. And I follow the BEST!
       h2 Resting on the shoulders of Giants:
-      h4.text-left I organise information such that similar stuff is not overhyped and bottlenecks are not overlooked. And I follow the BEST!
       GiantsSlider
-
   section
     .container
       h3 Honestly, they're great
@@ -87,7 +86,6 @@
       h4 They excell in different areas and specialise within their respective niches, thus sometimes missing certain important components. 
       h4 what are they missing?
       ArticlesLine
-
   section
     .container
       h4 After as much as I've studied I felt for a long time as though I still don't get the full picture. Well, that why I made this blog. To get the full picture. 
@@ -131,15 +129,6 @@ export default {
 };
 </script>
 
-//
-//
-//
-//
-//
-//
-//
-//
-
 <style lang="scss">
 
 @import '../assets/uniTheme.scss';
@@ -155,20 +144,6 @@ export default {
       margin-bottom: 8rem;
     }
   }
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
   section.welcome1 {
     padding-top: 3rem;
@@ -231,7 +206,6 @@ export default {
       }
     }
   }
-
   //
   //
   //
@@ -293,23 +267,7 @@ export default {
 
   section.giants {
     // background: #eee;
-    h2{ margin-bottom: 3rem;}
   }
-
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
 
   .textBox {
     // border: 1px solid #000;
